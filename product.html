@@ -1,79 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MDG produit unique</title>
-        <!-- CSS only -->
-        <!-- CSS only -->
-        <link href="css\bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css\fontawesome-free-5.15.4-web\css\all.min.css">
-        <link rel="stylesheet" href="css\style.css">
-    
-    </head>
-    
-    <body>
-    
-        <div class="top-nav-bar">
-            <div class="search-box">
-                <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
-                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-                <img src="image\logo.png" alt="logo" class="logo">
-                <input type="text" class="form-control">
-                <span class="input-group-text"><i class="fa fa-search"></i></span>
-            </div>
-            <div class="menu-bar">
-                <ul>
-                    <li><a href="#"> <i class="fa fa-shopping-basket"></i>Pannier</a></li>
-                    <li><a href="#">Souscrire</a></li>
-                    <li><a href="#">S'enregistrer</a></li>
-                </ul>
-            </div>
-        </div>  
-        <!--Produit unique--------------------------->
-        <section class="single-product">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="slider">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="image\pexels-photo-336372.jpeg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="image\pexels-photo-371519.jpeg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="image\pexels-photo-371522.jpeg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDG produit unique</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\fontawesome-free-5.15.4-web\css\all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+
+</head>
+
+<body>
+
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <a href="index.html"><img src="image\logo.png" alt="logo" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"> <i class="fa fa-shopping-basket"></i>Pannier</a></li>
+                <li><a href="#">Souscrire</a></li>
+                <li><a href="#">S'enregistrer</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---------------------produit unique-------------------------->
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="product-slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image\article1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image\article24.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image\hermes-babouche-blanc.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                    </section>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#product-slider"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#product-slider"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+
+                </div>
+                <div class="col-md-7">
+                    <p class="new-arrival text-center"> NOUVEAUTE</p>
+                    <h2>Babouches</h2>
+                    <p>Code de l'article: AGT3325</p>
+
+
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p class="price">USD $12.00</p>
+                    <p><b>Disponibilité: </b>en stock</p>
+                    <p><b>Condition: </b>Nouveau</p>
+                    <p><b>Marque: </b>Chanel</p>
+                    <label>Quantité:</label>
+                    <input type="text" value="1">
+                    <button type="button" class="btn btn-primary">Ajouter au pannier</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-------------------------description du produit-------------------------------->
+
+
+
+    <section class="product-description">
+        <div class="container">
+            <h6>Description de l'article</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nemo hic, soluta natus nostrum ipsum
+                molestias
+                iure exercitationem cupiditate hic error necessitatibus quaerat? Officia placeat eos aspernatur iure
+                illo iste debitis, possimus dolorem saepe asperiores esse nostrum consequuntur culpa quas fugit minus
+                temporibus adipisci obcaecati pariatur nam harum odio. Aut porro enim dolor ullam numquam. Voluptates,
+                optio quasi inventore expedita sit laboriosam, blanditiis voluptatibus nihil totam ratione quis unde
+                deleniti eum fuga necessitatibus impedit doloremque. Consequuntur expedita reprehenderit vel rem dolore
+                commodi necessitatibus consectetur consequatur atque earum impedit quidem animi quas amet ullam
+                praesentium nulla veniam quaerat saepe ea, soluta, deserunt perspiciatis voluptatem aliquid? Unde
+                voluptas aut iste ad id excepturi aperiam? Voluptate, officia hic tempora molestiae tenetur debitis,
+                modi eveniet, totam corporis ducimus quod? Illum necessitatibus
+                accusantium debitis dolorum mollitia cupiditate ipsam, reiciendis repellat harum eum vel? Dolor, eius.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nemo hic, soluta natus nostrum ipsum
+                molestias
+                iure exercitationem cupiditate hic error necessitatibus quaerat? Officia placeat eos aspernatur iure
+                illo iste debitis, possimus dolorem saepe asperiores esse nostrum consequuntur culpa quas fugit minus
+                temporibus adipisci obcaecati pariatur nam harum odio. Aut porro enim dolor ullam numquam. Voluptates,
+                optio quasi inventore expedita sit laboriosam, blanditiis voluptatibus nihil totam ratione quis unde
+                deleniti eum fuga necessitatibus impedit doloremque. Consequuntur expedita reprehenderit vel rem dolore
+                commodi necessitatibus consectetur consequatur atque earum impedit quidem animi quas amet ullam
+                praesentium nulla veniam quaerat saepe ea, soluta, deserunt perspiciatis voluptatem aliquid? Unde
+                voluptas aut iste ad id excepturi aperiam? Voluptate, officia hic tempora molestiae tenetur debitis,
+                modi eveniet, totam corporis ducimus quod? Illum necessitatibus
+                accusantium debitis dolorum mollitia cupiditate ipsam, reiciendis repellat harum eum vel? Dolor, eius.
+            </p>
+            <hr>
+        </div>
+            <div class="container">
+                <div class="title-box">
+                    <h2>Similaire</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src="image\article2.jpg" alt="hermes">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Boutique rapide">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter à la liste de souhaits">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter au pannier">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                                <h3>Babouche Chanel</h3>
+                                <h5>$8.00</h5>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src="image\dame.jpg" alt="hermes">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Boutique rapide">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter à la liste des souhaits">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter au pannier">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <h3>Sac Louis Vuitton</h3>
+                                <h5>$5.00</h5>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src="image\hermes (3).jpg" alt="hermes">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Boutique rapide">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter à la liste des souhaits">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter au pannier">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <h3>Complet Hermes</h3>
+                                <h5>$15.00</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src="image\sac-vert.jpg" alt="hermes">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Boutique rapide">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter à la liste des souhaits">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Ajouter au pannier">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <h3>New Botega</h3>
+                                <h5>$8.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    </section>
+
+
     <!--FOOTER--------------------------------------------------------------------------->
     <section class="footer">
         <div class="container text-center">
@@ -101,12 +260,14 @@
                 </div>
                 <div class="col-md-3">
                     <h1>Telecharger l'appli</h1>
-                    <img src="image\caracteristique5.png" alt="">
+                    <img src="image\téléchargement.png" alt="">
                 </div>
             </div>
         </div>
         <hr>
-        <p class="copyright">Made with <i class="fa fa-heart"></i>by Easy Tutorials</p>
-    </section>      
-</body>        
+        <p class="copyright">Made with <i class="fa fa-heart"></i>by MDG</p>
+    </section>
+    <script src="data.js"></script>
+</body>
+
 </html>
